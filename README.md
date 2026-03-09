@@ -31,36 +31,39 @@ Website gồm các phần chính:
 
 | STT | Họ và tên | Vai trò |
 |-----|-----------|--------|
-| 1 | Nguyễn Văn A | Thiết kế HTML |
-| 2 | Trần Văn B | Thiết kế CSS |
-| 3 | Lê Văn C | Nội dung sản phẩm |
-| 4 | Phạm Văn D | Kiểm tra và chỉnh sửa |
+| 1 | Trần Ngọc Hà My | Thiết kế HTML |
+| 2 | Lý Đoàn Xuân Khiết | Thiết kế HTML |
+| 3 | Lục Phương Vy | Thiết kế CSS |
+| 4 | Nguyễn Phan Minh Hương | Nội dung sản phẩm |
+| 5 | Huỳnh Nguyễn Bảo Trân | Kiểm tra và chỉnh sửa |
 
 ---
 
 ## 3. Phân công công việc
 
-### Thành viên 1
-- Xây dựng cấu trúc HTML
+### Trần Ngọc Hà My
 - Tạo các section chính của website:
   - Header
   - Hero
   - Feature
   - Product
   - Footer
+    
+### Lý Đoàn Xuân Khiết
+  - Xây dựng cấu trúc HTML
 
-### Thành viên 2
+### Lục Phương Vy
 - Thiết kế giao diện bằng CSS
 - Sử dụng Flexbox để căn chỉnh header
 - Sử dụng CSS Grid cho layout sản phẩm
 - Tạo hiệu ứng hover cho các thẻ sản phẩm
 
-### Thành viên 3
+### Nguyễn Phan Minh Hương
 - Chuẩn bị nội dung sản phẩm
 - Viết mô tả sản phẩm
 - Thêm giá và hình ảnh minh họa
 
-### Thành viên 4
+### Huỳnh Nguyễn Bảo Trân
 - Kiểm tra lỗi giao diện
 - Chỉnh sửa layout
 - Hoàn thiện và đóng gói project
@@ -81,3 +84,4 @@ Website là **website tĩnh**, không sử dụng framework hoặc backend.
 ---
 
 ## 5. Cấu trúc thư mục
+
