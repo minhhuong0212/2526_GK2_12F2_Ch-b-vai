@@ -2,40 +2,49 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>Gốm Sứ Artisan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gốm sứ Chị Bờ Vai</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
 <header class="site-header">
   <div class="site-container">
-    <div class="site-logo">Gốm Artisan</div>
+    <div class="site-logo">Gốm sứ Chị Bờ Vai</div>
 
     <nav class="site-nav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
 
-<section class="site-hero">
+<section class="site-hero" id="home">
   <div class="site-container">
-    <h1>Welcome to Our Ceramic Store</h1>
+    <h1>Welcome to "Gốm sứ Chị bờ vai"</h1>
     <p>Khám phá vẻ đẹp của gốm sứ thủ công.</p>
-    <a href="#" class="site-btn">Khám Phá</a>
+    <a href="#product" class="site-btn">Khám Phá</a>
   </div>
 </section>
 
 
-<section class="site-feature">
+<section class="site-feature" id="about">
   <div class="site-container">
+
     <h2 class="section-title">Vì Sao Chọn Chúng Tôi</h2>
+
+    <p class="about-desc">
+      <em>Gốm sứ Chị Bờ Vai là thương hiệu gốm thủ công mang đậm nét truyền thống.
+      Mỗi sản phẩm được tạo nên từ bàn tay nghệ nhân, kết hợp giữa nghệ thuật
+      và sự tinh tế trong từng chi tiết.</em>
+    </p>
 
     <div class="feature-grid">
 
@@ -64,35 +73,51 @@
 </section>
 
 
-<section class="site-product">
+<section class="site-product" id="product">
   <div class="site-container">
     <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
 
-    <div class="product-grid">
+    <div class="product-grid"> 
+        <div class="product-card"> 
+            <img src="https://via.placeholder.com/300x250"> 
+            <h3>Bình Hoa Cổ Điển</h3> 
+            <p class="price">350.000đ</p> 
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x250">
-        <h3>Bình Hoa Cổ Điển</h3>
-        <p class="price">350.000đ</p>
-      </div>
+        </div> <div class="product-card"> 
+            <img src="https://via.placeholder.com/300x250"> 
+            <h3>Bộ Ấm Trà</h3> 
+            <p class="price">480.000đ</p> 
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x250">
-        <h3>Bộ Ấm Trà</h3>
-        <p class="price">480.000đ</p>
-      </div>
+        </div> <div class="product-card"> 
+            <img src="https://via.placeholder.com/300x250"> 
+            <h3>Đĩa Trang Trí</h3> 
+            <p class="price">290.000đ</p> 
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x250">
-        <h3>Đĩa Trang Trí</h3>
-        <p class="price">290.000đ</p>
-      </div>
+        </div> <div class="product-card"> 
+            <img src="https://via.placeholder.com/300x250"> 
+            <h3>Ly Gốm</h3> 
+            <p class="price">150.000đ</p> 
+        
+        </div> <div class="product-card"> 
+            <img src="https://via.placeholder.com/300x250"> 
+            <h3>Bình Hoa Vintage</h3> 
+            <p class="price">420.000đ</p> </div> 
+            
+            <div class="product-card"> 
+                <img src="https://via.placeholder.com/300x250"> 
+                <h3>Ly Gốm Nhật</h3> 
+                <p class="price">190.000đ</p> 
+            
+            </div> <div class="product-card"> 
+                <img src="https://via.placeholder.com/300x250"> 
+                <h3>Đĩa Nghệ Thuật</h3> 
+                <p class="price">310.000đ</p>
 
-      <div class="product-card">
-        <img src="https://via.placeholder.com/300x250">
-        <h3>Ly Gốm</h3>
-        <p class="price">150.000đ</p>
-      </div>
+            </div> <div class="product-card"> 
+                <img src="https://via.placeholder.com/300x250"> 
+                <h3>Bộ Tách Trà Mini</h3> 
+                <p class="price">260.000đ</p> 
+            </div>
 
     </div>
   </div>
@@ -103,7 +128,7 @@
   <div class="site-container">
     <h2>Gốm Sứ Thủ Công Cao Cấp</h2>
     <p>Truyền thống kết hợp hiện đại.</p>
-    <a href="#" class="site-btn">Mua Ngay</a>
+    <a href="#product" class="site-btn">Mua Ngay</a>
   </div>
 </section>
 
@@ -146,7 +171,7 @@
 <section class="small-banner">
   <div class="site-container">
     <h2>Summer Sale 20%</h2>
-    <a href="#" class="site-btn">Shop Now</a>
+    <a href="#product" class="site-btn">Shop Now</a>
   </div>
 </section>
 
@@ -164,31 +189,48 @@
 </section>
 
 
-<footer class="site-footer">
+<footer class="site-footer" id="contact">
 
   <div class="site-container footer-grid">
 
     <div>
-      <h3>Gốm Artisan</h3>
+      <h3>Gốm sứ Chị Bờ Vai</h3>
       <p>Sản phẩm gốm sứ thủ công cao cấp.</p>
     </div>
 
     <div>
       <h3>Liên Hệ</h3>
-      <p>Email: gomartisan@gmail.com</p>
+      <p>Email: gomsuchibovai@gmail.com</p>
       <p>Phone: 0909123456</p>
     </div>
 
-    <div>
-      <h3>Mạng Xã Hội</h3>
-      <p>Facebook</p>
-      <p>Instagram</p>
-    </div>
+   <div>
+  <h3>Mạng Xã Hội</h3>
+
+  <p>
+    <a href="https://facebook.com" target="_blank">
+      <i class="fa fa-facebook"></i> Facebook
+    </a>
+  </p>
+
+  <p>
+    <a href="https://instagram.com" target="_blank">
+      <i class="fa fa-instagram"></i> Instagram
+    </a>
+  </p>
+
+  <p>
+    <a href="https://youtube.com" target="_blank">
+      <i class="fa fa-youtube"></i> Youtube
+    </a>
+  </p>
+
+</div>
 
   </div>
 
   <p class="copyright">
-    © 2026 Gom Artisan
+    © 2026 Gom su Chi Bo Vai
   </p>
 
 </footer>
