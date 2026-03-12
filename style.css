@@ -80,10 +80,12 @@ text-align:center;
 }
 
 .hero-content{
+max-width:2000px;
+}
+
+.hero-content{
 position:relative;
 z-index:2;
-
-max-width:500px;
 
 margin:auto;
 color:white;
@@ -304,6 +306,7 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
 
 
