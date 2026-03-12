@@ -27,12 +27,19 @@ padding:15px 0;
 position:sticky;
 top:0;
 z-index:1000;
+width:100%;
 }
 
 .site-header .site-container{
 display:flex;
 justify-content:space-between;
 align-items:center;
+}
+
+.site-container{
+width:90%;
+max-width:1200px;
+margin:auto;
 }
 
 .site-logo{
@@ -57,10 +64,14 @@ color:#AACDDC;
 }
 
 .site-hero{
-background: url("https://drive.google.com/drive/folders/15ICZPr0QXGPM5Z5mF8RelT-e-zE5H4bz") center/cover no-repeat;
+background-image:url("background.png"); 
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
 color:white;
 text-align:center;
-padding:100px 20px;
+padding:120px 20px;
 }
 
 .site-btn{
@@ -251,4 +262,5 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
