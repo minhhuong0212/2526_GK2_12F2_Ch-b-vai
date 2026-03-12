@@ -97,8 +97,9 @@ justify-content:center;
 }
 
 .hero-content p{
-font-size:22px;
-margin-bottom:25px;
+font-size:18px;
+margin-top:70px;
+margin-bottom:20px;
 }
 
 .site-hero::before{
@@ -301,6 +302,7 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
 
 
