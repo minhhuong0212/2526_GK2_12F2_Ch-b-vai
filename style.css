@@ -64,21 +64,19 @@ color:#AACDDC;
 }
 
 .site-hero{
-position:relative;
+background-image:url("background.png");
+background-size:contain;
+background-position:center;
+background-repeat:no-repeat;
+
+min-height:650px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
 text-align:center;
-}
-
-.hero-image{
-width:100%;
-height:auto;
-display:block;
-}
-
-.hero-content{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%,-50%);
 color:white;
 }
 
@@ -272,6 +270,7 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
 
 
