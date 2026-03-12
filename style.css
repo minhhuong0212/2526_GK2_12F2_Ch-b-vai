@@ -64,22 +64,22 @@ color:#AACDDC;
 }
 
 .site-hero{
-background-image:url("background.png");
-background-size:contain;
-background-position:center;
-background-repeat:no-repeat;
-
-min-height:750px;
-
-display:flex;
-flex-direction:column;
-align-items:center;
-justify-content:center;
-
+position:relative;
 text-align:center;
-color:white;
+}
 
-padding:120px 20px;
+.hero-image{
+width:100%;
+height:auto;
+display:block;
+}
+
+.hero-content{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+color:white;
 }
 
 .site-btn{
@@ -272,6 +272,7 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
 
 
