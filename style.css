@@ -63,18 +63,13 @@ transition:0.3s;
 color:#AACDDC;
 }
 
+.site-hero{
+width:100%;
+}
+
 .site-hero img{
 width:100%;
 display:block;
-}
-
-.hero-content{
-position:absolute;
-top:50%;
-left:50%;
-transform:translate(-50%, -50%);
-text-align:center;
-color:white;
 }
 
 .site-btn{
@@ -267,6 +262,7 @@ text-decoration:none;
 .site-footer a:hover{
 color:white;
 }
+
 
 
 
