@@ -6,23 +6,23 @@ Tên dự án: **Website bán gốm sứ thủ công – Gốm sứ Chị Bờ V
 Website được xây dựng nhằm mô phỏng một cửa hàng bán gốm sứ online.  
 Trang web giới thiệu các sản phẩm gốm như bình hoa, ly gốm, bộ ấm trà và các sản phẩm trang trí.
 
-Mục tiêu của dự án:
+Mục tiêu của dự án nhằm:
 
-- Thiết kế giao diện website bán hàng đơn giản
-- Thực hành xây dựng layout bằng HTML và CSS
-- Tạo bố cục website rõ ràng và dễ sử dụng
-- Áp dụng các kỹ thuật như Flexbox và CSS Grid
+- Thiết kế giao diện website bán hàng dễ thao tác và bố cục hợp lý cho người sử dụng
+- Xây dựng layout bằng HTML và CSS
+- Áp dụng các kỹ thuật như coding đã được học như CSS Grid
 
 Website gồm các phần chính:
 
-- Header (Menu điều hướng)
-- Hero section (Banner giới thiệu)
-- Feature section (Lý do chọn sản phẩm)
+- Header: Menu điều hướng
+- Hero section: Banner giới thiệu)
+- Feature section: Lý do chọn doanh nghiệp này
 - Sản phẩm nổi bật
-- Banner quảng cáo
+- Small banner: Banner quảng cáo
 - Sản phẩm mới
+- Small banner: Banner giảm giá mùa hè
 - Newsletter đăng ký email
-- Footer (Thông tin liên hệ)
+- Footer: Thông tin liên hệ
 
 ---
 
@@ -79,4 +79,5 @@ Dự án sử dụng các công nghệ:
 - CSS Grid
 
 Website là **website tĩnh**, không sử dụng framework hoặc backend.
+
 
