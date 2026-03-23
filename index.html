@@ -3,159 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gốm sứ Chị Bờ Vai</title>
+<title>Shop</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header class="site-header">
 <div class="site-container">
 <div class="site-logo">Gốm sứ Chị Bờ Vai</div>
 
 <nav class="site-nav">
 <ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#shop">Shop</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="shop.html">Shop</a></li>
 </ul>
 </nav>
 </div>
 </header>
 
-<!-- HERO -->
-<section class="site-hero" id="home">
-<div class="hero-content">
-<h2>Gốm sứ thủ công</h2>
-<p>Khám phá vẻ đẹp tinh tế của gốm sứ</p>
-<a href="#shop" class="site-btn">Khám phá</a>
-</div>
-</section>
-
-<!-- SHOP -->
-<section id="shop">
+<section class="site-product">
 <div class="site-container">
 
-<h2 class="section-title">Sản phẩm</h2>
+<h2 class="section-title">Tất Cả Sản Phẩm</h2>
 
 <div class="product-grid">
 
 <!-- 12 sản phẩm -->
-<div class="product-card" onclick="showDetail('bình hoa.png','Bình Hoa Cổ Điển','350.000đ')">
+<div class="product-card">
+<a href="product.html">
 <img src="bình hoa.png">
-<h3>Bình Hoa</h3>
+<h3>Bình Hoa Cổ Điển</h3>
 <p class="price">350.000đ</p>
+</a>
 </div>
 
-<div class="product-card" onclick="showDetail('bộ ấm trà.png','Bộ Ấm Trà','480.000đ')">
-<img src="bộ ấm trà.png">
-<h3>Bộ Trà</h3>
-<p class="price">480.000đ</p>
-</div>
+<div class="product-card"><img src="bộ ấm trà.png"><h3>Bộ Ấm Trà</h3><p class="price">480.000đ</p></div>
+<div class="product-card"><img src="đĩa.png"><h3>Đĩa Cổ Điển</h3><p class="price">290.000đ</p></div>
+<div class="product-card"><img src="ly.png"><h3>Ly Gốm</h3><p class="price">150.000đ</p></div>
 
-<div class="product-card" onclick="showDetail('đĩa.png','Đĩa','290.000đ')">
-<img src="đĩa.png">
-<h3>Đĩa</h3>
-<p class="price">290.000đ</p>
-</div>
+<div class="product-card"><img src="https://via.placeholder.com/300"><h3>Bình Nghệ Thuật</h3><p class="price">400.000đ</p></div>
+<div class="product-card"><img src="https://via.placeholder.com/300"><h3>Ly Men Rạn</h3><p class="price">180.000đ</p></div>
+<div class="product-card"><img src="https://via.placeholder.com/300"><h3>Bộ Mini</h3><p class="price">260.000đ</p></div>
+<div class="product-card"><img src="https://via.placeholder.com/300"><h3>Đĩa Trang Trí</h3><p class="price">310.000đ</p></div>
 
-<div class="product-card" onclick="showDetail('ly.png','Ly Gốm','150.000đ')">
-<img src="ly.png">
-<h3>Ly</h3>
-<p class="price">150.000đ</p>
-</div>
-
-<!-- thêm -->
-<div class="product-card" onclick="showDetail(this.children[0].src,'Bình Nghệ Thuật','400.000đ')">
-<img src="https://via.placeholder.com/300">
-<h3>Bình Nghệ Thuật</h3>
-<p class="price">400.000đ</p>
-</div>
-
-<div class="product-card" onclick="showDetail(this.children[0].src,'Ly Men Rạn','180.000đ')">
-<img src="https://via.placeholder.com/300">
-<h3>Ly Men Rạn</h3>
-<p class="price">180.000đ</p>
-</div>
-
-<div class="product-card" onclick="showDetail(this.children[0].src,'Bộ Mini','260.000đ')">
-<img src="https://via.placeholder.com/300">
-<h3>Bộ Mini</h3>
-<p class="price">260.000đ</p>
-</div>
-
-<div class="product-card" onclick="showDetail(this.children[0].src,'Đĩa Trang Trí','310.000đ')">
-<img src="https://via.placeholder.com/300">
-<h3>Đĩa Trang Trí</h3>
-<p class="price">310.000đ</p>
-</div>
-
-<div class="product-card" onclick="showDetail(this.children[0].src,'Bình Vintage','420.000đ')">
-<img src="https://via.placeholder.com/300">
-<h3>Bình Vintage</h3>
-<p class="price">420.000đ</p>
-</div>
-
-<div class="product-card" onclick="showDetail(this.children[0].src,'Ly Nhật','190.000đ')">
-<img src="https://via.placeholder.com/300">
-<h3>Ly Nhật</h3>
-<p class="price">190.000đ</p>
-</div>
-
-<div class="product-card" onclick="showDetail(this.children[0].src,'Bình Cao Cấp','550.000đ')">
-<img src="https://via.placeholder.com/300">
-<h3>Bình Cao Cấp</h3>
-<p class="price">550.000đ</p>
-</div>
-
-<div class="product-card" onclick="showDetail(this.children[0].src,'Chén','120.000đ')">
-<img src="https://via.placeholder.com/300">
-<h3>Chén</h3>
-<p class="price">120.000đ</p>
-</div>
+<div class="product-card"><img src="https://via.placeholder.com/300"><h3>Bình Vintage</h3><p class="price">420.000đ</p></div>
+<div class="product-card"><img src="https://via.placeholder.com/300"><h3>Ly Nhật</h3><p class="price">190.000đ</p></div>
+<div class="product-card"><img src="https://via.placeholder.com/300"><h3>Bình Cao Cấp</h3><p class="price">550.000đ</p></div>
+<div class="product-card"><img src="https://via.placeholder.com/300"><h3>Chén Gốm</h3><p class="price">120.000đ</p></div>
 
 </div>
 </div>
 </section>
 
-<!-- PRODUCT DETAIL -->
-<section class="product-detail" id="detail">
-<div class="site-container detail-grid">
-
-<div>
-<img id="detail-img" class="detail-img">
-</div>
-
-<div>
-<h2 id="detail-name"></h2>
-<p class="price" id="detail-price"></p>
-<p>Sản phẩm thủ công tinh tế, bền đẹp.</p>
-
-<button class="site-btn" onclick="backToShop()">Quay lại</button>
-</div>
-
-</div>
-</section>
-
-<!-- FOOTER -->
 <footer class="site-footer">
 <p>© 2026 Gom su Chi Bo Vai</p>
 </footer>
-
-<script>
-function showDetail(img,name,price){
-document.getElementById("detail").style.display="block";
-document.getElementById("detail-img").src=img;
-document.getElementById("detail-name").innerText=name;
-document.getElementById("detail-price").innerText=price;
-window.location.href="#detail";
-}
-
-function backToShop(){
-document.getElementById("detail").style.display="none";
-window.location.href="#shop";
-}
-</script>
 
 </body>
 </html>
