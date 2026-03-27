@@ -76,7 +76,7 @@ text-decoration:none;
 border-radius:5px;
 }
 
-/* PRODUCT GRID */
+
 .product-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
