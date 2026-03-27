@@ -163,5 +163,38 @@ font-size:15px;
 grid-template-columns:1fr;
 text-align:center;
 }
+/* PRODUCT DETAIL */
+.product-detail{
+padding:60px 0;
+}
+
+.detail-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.detail-img{
+width:100%;
+max-width:350px;
+display:block;
+margin:auto;
+}
+
+.detail-info h2{
+margin-bottom:10px;
+}
+
+.detail-info p{
+margin-bottom:10px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+.detail-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
 
 }
