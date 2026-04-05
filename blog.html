@@ -1,4 +1,103 @@
-<h2>Blog</h2>
-<p>Bài 1</p>
-<p>Bài 2</p>
-<p>Bài 3</p>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức | Gốm sứ Chị Bờ Vai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* BASE & HEADER (Giữ đồng bộ với các trang khác) */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: #F3E3D0; line-height: 1.6; }
+        .container { width: 90%; max-width: 1100px; margin: auto; }
+        
+        .site-header { background: #1A3263; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        .header-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: white; font-weight: bold; font-size: 20px; }
+        .nav-menu { display: flex; list-style: none; gap: 15px; }
+        .nav-menu a { color: white !important; text-decoration: none; font-size: 14px; text-transform: uppercase; }
+        
+        /* BLOG STYLES */
+        .blog-title { text-align: center; margin: 40px 0; color: #1A3263; }
+        .blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 50px; }
+        
+        .blog-card { background: white; border-radius: 8px; overflow: hidden; shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s; }
+        .blog-card:hover { transform: translateY(-5px); }
+        .blog-img { width: 100%; height: 200px; object-fit: cover; }
+        
+        .blog-info { padding: 20px; }
+        .blog-info span { font-size: 12px; color: #888; }
+        .blog-info h3 { margin: 10px 0; color: #1A3263; font-size: 18px; }
+        .blog-info p { font-size: 14px; color: #555; margin-bottom: 15px; }
+        .read-more { color: #1A3263; font-weight: bold; text-decoration: none; font-size: 13px; border-bottom: 2px solid #AACDDC; }
+
+        /* FOOTER */
+        .site-footer { background: #1A3263; color: white; padding: 30px 0; text-align: center; margin-top: 40px; }
+        
+        @media (max-width: 768px) {
+            .header-flex { flex-direction: column; gap: 10px; }
+            .nav-menu { font-size: 12px; flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-flex">
+            <div class="logo">Gốm sứ Chị Bờ Vai</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="blog-title">Tin tức & Nghệ thuật Gốm</h2>
+
+        <div class="blog-grid">
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?q=80&w=600" alt="Gốm sứ" class="blog-img">
+                <div class="blog-info">
+                    <span>15 Tháng 03, 2026 | Thủ công</span>
+                    <h3>Cách bảo quản đồ gốm luôn bền đẹp</h3>
+                    <p>Đồ gốm thủ công cần sự chăm sóc đặc biệt để giữ được lớp men sáng bóng qua thời gian...</p>
+                    <a href="#" class="read-more">Đọc thêm</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1493106641515-6b563ad3d06e?q=80&w=600" alt="Quy trình nung" class="blog-img">
+                <div class="blog-info">
+                    <span>10 Tháng 03, 2026 | Quy trình</span>
+                    <h3>Sức mạnh của lửa trong lò nung 1300°C</h3>
+                    <p>Khám phá hành trình từ một khối đất sét vô tri trở thành tác phẩm nghệ thuật sau 12 giờ nung...</p>
+                    <a href="#" class="read-more">Đọc thêm</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?q=80&w=600" alt="Trang trí" class="blog-img">
+                <div class="blog-info">
+                    <span>05 Tháng 03, 2026 | Xu hướng</span>
+                    <h3>Trang trí không gian sống với gốm hiện đại</h3>
+                    <p>Xu hướng đưa gốm sứ vào nội thất tối giản đang trở lại mạnh mẽ trong năm 2026 này...</p>
+                    <a href="#" class="read-more">Đọc thêm</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Gốm sứ Chị Bờ Vai. Sản phẩm thủ công tâm huyết.</p>
+    </footer>
+
+</body>
+</html>
