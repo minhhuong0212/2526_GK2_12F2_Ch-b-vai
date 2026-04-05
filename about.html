@@ -1,2 +1,243 @@
-<h2>Về chúng tôi</h2>
-<p>Chuyên gốm sứ thủ công.</p>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu | Gốm sứ Chị Bờ Vai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <style>
+        /* ===== TỔNG THỂ ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #F3E3D0; /* Màu kem gốm sứ */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ===== HEADER (Sửa lỗi dàn hàng ngang) ===== */
+        .site-header {
+            background: #1A3263;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .nav-menu {
+            display: flex; /* Đảm bảo dàn hàng ngang */
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: #ffffff !important; /* Buộc chữ màu trắng */
+            font-size: 15px;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .nav-menu li a:hover {
+            color: #AACDDC !important;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .about-hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1520408222757-6f9f95d87d5d?q=80&w=1500&auto=format&fit=crop') center/cover;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        /* ===== NỘI DUNG GIỚI THIỆU ===== */
+        .about-section {
+            padding: 60px 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            color: #1A3263;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 15px 15px 0 #AACDDC;
+        }
+
+        /* ===== GIÁ TRỊ CỐT LÕI ===== */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .value-card {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .value-card i {
+            font-size: 40px;
+            color: #1A3263;
+            margin-bottom: 15px;
+        }
+
+        /* ===== FOOTER ===== */
+        .site-footer {
+            background: #1A3263;
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .footer-content h3 { color: #AACDDC; margin-bottom: 15px; }
+
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            font-size: 13px;
+            opacity: 0.7;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .header-flex { flex-direction: column; gap: 15px; }
+            .about-grid { grid-template-columns: 1fr; }
+            .about-image { order: -1; }
+            .nav-menu { gap: 10px; font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-flex">
+            <div class="logo">Gốm sứ Chị Bờ Vai</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="shop.html">Cửa hàng</a></li>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="blog.html">Tin tức</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                    <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-hero">
+        <div>
+            <h1>Câu Chuyện Về Chị Bờ Vai</h1>
+            <p>Nơi nét đẹp truyền thống hòa quyện cùng hiện đại</p>
+        </div>
+    </section>
+
+    <main class="container about-section">
+        <div class="about-grid">
+            <div class="about-text">
+                <h2>Gốm sứ là hơi thở đời sống</h2>
+                <p>Ra đời từ những làng nghề truyền thống lâu đời nhất Việt Nam, <strong>Gốm sứ Chị Bờ Vai</strong> mong muốn mang những tác phẩm nghệ thuật làm từ đất sét đến gần hơn với không gian sống của bạn.</p>
+                <p style="margin-top: 15px;">Chúng tôi không chỉ bán sản phẩm, chúng tôi kể câu chuyện về sự nhẫn nại, tâm huyết của người nghệ nhân qua từng đường vân, nét vẽ men lam hay men rạn.</p>
+                <p style="margin-top: 15px;">Mỗi sản phẩm tại đây đều trải qua 12 công đoạn tỉ mỉ, từ chọn đất, tạo hình, vẽ tay đến nung ở nhiệt độ 1300°C để đảm bảo độ bền vĩnh cửu.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1565191999001-551c187427bb?q=80&w=1000&auto=format&fit=crop" alt="Làm gốm thủ công">
+            </div>
+        </div>
+
+        <div class="values-grid">
+            <div class="value-card">
+                <i class="fa-solid fa-heart"></i>
+                <h4>Tâm Huyết</h4>
+                <p>Từng chi tiết nhỏ nhất đều được chăm chút bởi đôi bàn tay nghệ nhân.</p>
+            </div>
+            <div class="value-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h4>An Toàn</h4>
+                <p>Sử dụng men không chì, tuyệt đối an toàn cho sức khỏe gia đình bạn.</p>
+            </div>
+            <div class="value-card">
+                <i class="fa-solid fa-leaf"></i>
+                <h4>Bền Vững</h4>
+                <p>Chất liệu đất sét chọn lọc, chịu nhiệt tốt và bền màu theo thời gian.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h3>Về chúng tôi</h3>
+                    <p>Gốm sứ Chị Bờ Vai - Tôn vinh vẻ đẹp gốm Việt thủ công.</p>
+                </div>
+                <div>
+                    <h3>Liên hệ</h3>
+                    <p>Email: gomsuchibovai@gmail.com</p>
+                    <p>Hotline: 0909 123 456</p>
+                </div>
+                <div>
+                    <h3>Kết nối</h3>
+                    <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+                    <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Gốm sứ Chị Bờ Vai. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
