@@ -932,3 +932,16 @@ body { background: #F3E3D0; color: #333; }
         justify-content: center; 
     }
 }
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
