@@ -9,11 +9,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 <style>
-/* thêm chút style để nhìn ổn hơn nếu chưa có CSS */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-@@ -38,6 +37,15 @@
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.price {
     color: #c0392b;
     font-weight: bold;
 }
@@ -29,11 +49,22 @@
 </style>
 
 </head>
-@@ -57,7 +65,12 @@
+
+<body>
+
+<header class="site-header">
+    <div class="container header-flex">
+        <div class="logo">
+            <a href="index.html" style="color: white; text-decoration: none;">Gốm sứ Chị Bờ Vai</a>
+        </div>
+
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="shop.html">Cửa hàng</a></li>
                 <li><a href="about.html">Giới thiệu</a></li>
                 <li><a href="blog.html">Tin tức</a></li>
                 <li><a href="contact.html">Liên hệ</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li>
                     <a href="cart.html">
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -43,7 +74,14 @@
             </ul>
         </nav>
     </div>
-@@ -72,73 +85,84 @@
+</header>
+
+<div class="site-container" id="products">
+    <h2 class="section-title">Tất cả sản phẩm</h2>
+
+    <div class="product-grid">
+
+        <div class="product-card">
             <img src="https://raw.githubusercontent.com/minhhuong0212/2526_GK2_12F2_Ch-b-vai/main/b%C3%ACnh%20hoa.png">
             <h3>Bình Hoa</h3>
             <p class="price">350.000đ</p>
@@ -70,8 +108,6 @@
             <p class="price">480.000đ</p>
             <button class="btn-add-cart" data-name="Ấm trà" data-price="480000">Thêm vào giỏ</button>
         </div>
-
-        <!-- ảnh mới -->
 
         <div class="product-card">
             <img src="https://cdn.hstatic.net/products/200000532849/112776296-sm-01_30a70e09bcbf43f4850a7f341d4e3566_large.png">
@@ -130,7 +166,32 @@
         </div>
 
     </div>
-@@ -171,5 +195,35 @@
+</div>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div>
+                <h3>Về chúng tôi</h3>
+                <p>Gốm sứ Chị Bờ Vai - Tôn vinh vẻ đẹp gốm Việt thủ công.</p>
+            </div>
+
+            <div>
+                <h3>Liên hệ</h3>
+                <p>Email: gomsuchibovai@gmail.com</p>
+                <p>Hotline: 0909 123 456</p>
+            </div>
+
+            <div>
+                <h3>Kết nối</h3>
+                <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+                <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2026 Gốm sứ Chị Bờ Vai
+        </div>
     </div>
 </footer>
 
@@ -163,34 +224,6 @@ document.querySelectorAll(".btn-add-cart").forEach(btn => {
 
 updateCartCount();
 </script>
-<footer class="site-footer">
-    <div class="container">
-        <div class="footer-content">
-            <div>
-                <h3>Về chúng tôi</h3>
-                <p>Gốm sứ Chị Bờ Vai - Tôn vinh vẻ đẹp gốm Việt thủ công.</p>
-            </div>
 
-            <div>
-                <h3>Liên hệ</h3>
-                <p>Email: gomsuchibovai@gmail.com</p>
-                <p>Hotline: 0909 123 456</p>
-            </div>
-
-            <div>
-                <h3>Kết nối</h3>
-                <p><i class="fa-brands fa-facebook"></i> Facebook</p>
-                <p><i class="fa-brands fa-instagram"></i> Instagram</p>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            &copy; 2026 Gốm sứ Chị Bờ Vai
-        </div>
-    </div>
-</footer>
-
-</body>
-</html>
 </body>
 </html>
