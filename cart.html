@@ -3,92 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng | Gốm sứ Chị Bờ Vai</title>
+    <title>Cửa hàng | Gốm sứ Chị Bờ Vai</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="site-header">
-    <div class="container header-flex">
-        <div class="logo">
-            <a href="index.html" style="color: white; text-decoration: none;">Gốm sứ Chị Bờ Vai</a>
-        </div>
-
-        <nav>
-            <ul class="nav-menu">
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="shop.html">Cửa hàng</a></li>
-                    <li><a href="about.html">Giới thiệu</a></li>
-                    <li><a href="blog.html">Tin tức</a></li>
-                    <li><a href="contact.html">Liên hệ</a></li>
+        <div class="container header-flex">
+            <a href="index.html" class="logo">Gốm sứ Chị Bờ Vai</a>
+            <nav class="site-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="shop.html">CỬA HÀNG</a></li>
+                    <li><a href="about.html">GIỚI THIỆU</a></li>
+                    <li><a href="blog.html">TIN TỨC</a></li>
+                    <li><a href="contact.html">LIÊN HỆ</a></li>
                     <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
                 </ul>
-        </nav>
-    </div>
-</header>
-
-
-    <main class="container cart-section">
-        <h2 class="cart-title">Giỏ hàng của bạn</h2>
-        <div class="cart-table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Sản phẩm</th>
-                        <th>Giá</th>
-                        <th>Số lượng</th>
-                        <th>Tổng</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="cart-item-info">
-                                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?q=80&w=200" alt="Sản phẩm">
-                                <span class="cart-item-name">Bát sứ họa tiết cổ</span>
-                            </div>
-                        </td>
-                        <td>250.000đ</td>
-                        <td><input type="number" value="1" class="qty-input"></td>
-                        <td>250.000đ</td>
-                    </tr>
-                </tbody>
-            </table>
+            </nav>
         </div>
+    </header>
 
-        <div class="cart-summary">
-            <div class="summary-box">
-                <div class="summary-row">
-                    <span>Tổng tiền:</span>
-                    <strong style="color: #1A3263;">250.000đ</strong>
+    <main class="container">
+        <h1 class="page-title">Tất cả sản phẩm</h1>
+
+        <div class="product-grid">
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="binh-hoa.jpg" alt="Bình hoa">
                 </div>
-                <button class="checkout-btn">Thanh toán ngay</button>
+                <h3 class="product-name">Bình Hoa</h3>
+                <p class="product-price">350.000đ</p>
+                <button class="add-to-cart">Thêm vào giỏ</button>
             </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="ly.jpg" alt="Ly">
+                </div>
+                <h3 class="product-name">Ly</h3>
+                <p class="product-price">150.000đ</p>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="dia.jpg" alt="Đĩa">
+                </div>
+                <h3 class="product-name">Đĩa</h3>
+                <p class="product-price">200.000đ</p>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="am-tra.jpg" alt="Ấm trà">
+                </div>
+                <h3 class="product-name">Ấm trà</h3>
+                <p class="product-price">480.000đ</p>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="dia-trai-cay.jpg" alt="Đĩa trái cây">
+                </div>
+                <h3 class="product-name">Đĩa trái cây</h3>
+                <p class="product-price">100.000đ</p>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="duong-dan-anh.jpg" alt="Tên sản phẩm">
+                </div>
+                <h3 class="product-name">Tên sản phẩm mới</h3>
+                <p class="product-price">Giá tiền</p>
+                <button class="add-to-cart">Thêm vào giỏ</button>
+            </div>
+
         </div>
     </main>
- <footer class="site-footer">
+
+    <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h3>Về chúng tôi</h3>
-                    <p>Gốm sứ Chị Bờ Vai - Tôn vinh vẻ đẹp gốm Việt thủ công.</p>
-                </div>
-                <div>
-                    <h3>Liên hệ</h3>
-                    <p>Email: gomsuchibovai@gmail.com</p>
-                    <p>Hotline: 0909 123 456</p>
-                </div>
-                <div>
-                    <h3>Kết nối</h3>
-                    <p><i class="fa-brands fa-facebook"></i> Facebook</p>
-                    <p><i class="fa-brands fa-instagram"></i> Instagram</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                &copy; 2026 Gốm sứ Chị Bờ Vai. All rights reserved.
-            </div>
+            <p>&copy; 2026 Gốm sứ Chị Bờ Vai. Sản phẩm thủ công tâm huyết từ đất Việt.</p>
         </div>
     </footer>
+
 </body>
 </html>
